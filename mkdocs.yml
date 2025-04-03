@@ -1,0 +1,79 @@
+markdown_extensions:
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - md_in_html
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+  - pymdownx.betterem
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.critic
+  - mdx_math
+  - md_in_html
+  - pymdownx.betterem
+  - pymdownx.blocks.caption
+  - pymdownx.arithmatex:
+      generic: true
+
+site_name: My MkDocs Material Documentation
+site_url: http://127.0.0.1:8000
+
+nav: ## Edit me to set the Table of Contents Tree
+  - index.md
+  - Basic Electronics:
+    - Circuit Fundamentals: Circuit Fundametals.md
+  - Learning Hub:
+    - LASERS: LASERs 101.md
+    - Interview Prep: 
+      - Questions: Interview Questions.md
+      - Answers: Interview Anwsers.md
+
+theme:
+  name: material
+  font:
+    text: Merriweather Sans
+    code: Red Hat Mono
+  logo: assets/logo.png
+  favicon: assets/logo.png
+  features:
+    - navigation.footer
+    - navigation.path
+  palette:
+    # Dark Mode
+    - scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Dark mode
+      primary: deep purple
+      accent: white
+
+    # Light Mode
+    - scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Light mode
+      primary: blue
+      accent: deep orange
+      
+  language: en
+
+extra_css:
+  - stylesheets/extra.css
+  - https://unpkg.com/katex@0/dist/katex.min.css
+
+
+extra_javascript:
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+  - assets/MathJaxHelper.js
+  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+
+plugins:
+  - search:
+  - offline:
+
+copyright: Copyright &copy; 2024 James Willett purple purple
